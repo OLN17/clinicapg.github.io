@@ -1,0 +1,110 @@
+body {
+    font-family: 'SegoeUI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #3498db; /* Azul */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative; /* Para posicionar os traços */
+}
+
+.header-divider {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 70%; /* Ajuste conforme necessário */
+    background-color: #2980b9; /* Azul mais escuro */
+}
+
+.menu-bar {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-bar a {
+    text-decoration: none;
+    color: white;
+    margin: 0 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu-bar a:hover {
+    color: #2c3e50; /* Azul mais escuro no hover */
+}
+
+main {
+    background-color: #ecf0f1; /* Cinza claro */
+    padding: 20px 0;
+}
+
+.clinic-info {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#photo-carousel {
+    /* Estilos do carrossel aqui */
+}
+
+footer {
+    background-color: #2c3e50; /* Azul mais escuro */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.footer-contact {
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    color: #fff; /* Branco */
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #55acee; /* Azul mais claro no hover */
+}
+
+h1,h2,h3,p {
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Adapte o tamanho da fonte para dispositivos menores */
+@media screen and (max-width: 768px) {
+    .menu-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-bar a {
+        margin: 10px 0;
+    }
+}
